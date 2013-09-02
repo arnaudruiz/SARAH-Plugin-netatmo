@@ -1,0 +1,16 @@
+<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="ruleDemo" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="ruleDemo" scope="public">
+    <example>Sarah quelle est la température</example>
+    <tag>out.action=new Object(); </tag>
+
+    <item>Sarah</item>
+
+    <one-of>
+      <item>combien fait-il						<tag>out.action.capteur="all"</tag></item>
+      <item>quelle est la température <tag>out.action.capteur="temp"</tag></item>
+      <item>verifies la qualité de l'air		<tag>out.action.capteur="air"</tag></item> 
+    </one-of>
+
+    <tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/netatmo";</tag>
+  </rule> 
+</grammar>
