@@ -1,0 +1,12 @@
+{
+  "modules": { 
+    "netatmo": {
+      "description": "Plugin pour communiquer avec votre station météo Netatmo",
+      "version": "1.0",
+      "name": "",
+      "netatmo_usr":"",
+      "netatmo_pwd":"",
+      "humidite":"Y"
+    }
+  }
+}
